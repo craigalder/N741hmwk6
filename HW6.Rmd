@@ -1,12 +1,17 @@
 ---
 title: "HW6"
-author: "Vicki Hertzberg"
-date: "3/15/2017"
+author: "Craig Alder"
+date: "3/22/2017"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(dada2); packageVersion("dada2")
+library(phyloseq); packageVersion("phyloseq")
+library(ShortRead); packageVersion("ShortRead")
+library(ggplot2); packageVersion("ggplot2")
 ```
 
 # Homework 6
@@ -31,9 +36,20 @@ library(*package_name*); packageVersion("*package_name*");
 
 - You can provide evidence that you have downloaded these files with the following commands (in an R chunk):
 
-path <- "~/MiSeq_SOP" # CHANGE THIS to the directory containing the fastq files after unzipping
+
+
+
+
+```{r}
+path <- "/Users/craigalder/Documents/Big Data Class/N741hmwk6/MiSeq_SOP" # CHANGE THIS to the directory containing the fastq files after unzipping
 fns <- list.files(path)
 fns
 
+path <- "/Users/craigalder/Documents/Big Data Class/N741hmwk6/" # CHANGE THIS to the directory containing the fastq files after unzipping
+fns <- list.files(path)
+fns
+```
+
 Due on 3/22 at 5 pm.
 
+The link to my Github account is [https://github.com/craigalder](https://github.com/craigalder). The link to my repository for this assignment is [https://github.com/craigalder/N741hmwk6](https://github.com/craigalder/N741hmwk6).

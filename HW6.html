@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Vicki Hertzberg" />
+<meta name="author" content="Craig Alder" />
 
 
 <title>HW6</title>
@@ -117,8 +117,8 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">HW6</h1>
-<h4 class="author"><em>Vicki Hertzberg</em></h4>
-<h4 class="date"><em>3/15/2017</em></h4>
+<h4 class="author"><em>Craig Alder</em></h4>
+<h4 class="date"><em>3/22/2017</em></h4>
 
 </div>
 
@@ -146,7 +146,40 @@ $(document).ready(function () {
 <li><p>the RDP species assignmet set from the same site as the RDP training set. Again, do not unzip it but DO store it in the same directory as the miseq files.</p></li>
 <li><p>You can provide evidence that you have downloaded these files with the following commands (in an R chunk):</p></li>
 </ul>
-<p>path &lt;- “~/MiSeq_SOP” # CHANGE THIS to the directory containing the fastq files after unzipping fns &lt;- list.files(path) fns</p>
+<pre class="r"><code>path &lt;- &quot;/Users/craigalder/Documents/Big Data Class/N741hmwk6/MiSeq_SOP&quot; # CHANGE THIS to the directory containing the fastq files after unzipping
+fns &lt;- list.files(path)
+fns</code></pre>
+<pre><code>##  [1] &quot;F3D0_S188_L001_R1_001.fastq&quot;   &quot;F3D0_S188_L001_R2_001.fastq&quot;  
+##  [3] &quot;F3D1_S189_L001_R1_001.fastq&quot;   &quot;F3D1_S189_L001_R2_001.fastq&quot;  
+##  [5] &quot;F3D141_S207_L001_R1_001.fastq&quot; &quot;F3D141_S207_L001_R2_001.fastq&quot;
+##  [7] &quot;F3D142_S208_L001_R1_001.fastq&quot; &quot;F3D142_S208_L001_R2_001.fastq&quot;
+##  [9] &quot;F3D143_S209_L001_R1_001.fastq&quot; &quot;F3D143_S209_L001_R2_001.fastq&quot;
+## [11] &quot;F3D144_S210_L001_R1_001.fastq&quot; &quot;F3D144_S210_L001_R2_001.fastq&quot;
+## [13] &quot;F3D145_S211_L001_R1_001.fastq&quot; &quot;F3D145_S211_L001_R2_001.fastq&quot;
+## [15] &quot;F3D146_S212_L001_R1_001.fastq&quot; &quot;F3D146_S212_L001_R2_001.fastq&quot;
+## [17] &quot;F3D147_S213_L001_R1_001.fastq&quot; &quot;F3D147_S213_L001_R2_001.fastq&quot;
+## [19] &quot;F3D148_S214_L001_R1_001.fastq&quot; &quot;F3D148_S214_L001_R2_001.fastq&quot;
+## [21] &quot;F3D149_S215_L001_R1_001.fastq&quot; &quot;F3D149_S215_L001_R2_001.fastq&quot;
+## [23] &quot;F3D150_S216_L001_R1_001.fastq&quot; &quot;F3D150_S216_L001_R2_001.fastq&quot;
+## [25] &quot;F3D2_S190_L001_R1_001.fastq&quot;   &quot;F3D2_S190_L001_R2_001.fastq&quot;  
+## [27] &quot;F3D3_S191_L001_R1_001.fastq&quot;   &quot;F3D3_S191_L001_R2_001.fastq&quot;  
+## [29] &quot;F3D5_S193_L001_R1_001.fastq&quot;   &quot;F3D5_S193_L001_R2_001.fastq&quot;  
+## [31] &quot;F3D6_S194_L001_R1_001.fastq&quot;   &quot;F3D6_S194_L001_R2_001.fastq&quot;  
+## [33] &quot;F3D7_S195_L001_R1_001.fastq&quot;   &quot;F3D7_S195_L001_R2_001.fastq&quot;  
+## [35] &quot;F3D8_S196_L001_R1_001.fastq&quot;   &quot;F3D8_S196_L001_R2_001.fastq&quot;  
+## [37] &quot;F3D9_S197_L001_R1_001.fastq&quot;   &quot;F3D9_S197_L001_R2_001.fastq&quot;  
+## [39] &quot;HMP_MOCK.v35.fasta&quot;            &quot;Mock_S280_L001_R1_001.fastq&quot;  
+## [41] &quot;Mock_S280_L001_R2_001.fastq&quot;   &quot;mouse.dpw.metadata&quot;           
+## [43] &quot;mouse.time.design&quot;             &quot;stability.batch&quot;              
+## [45] &quot;stability.files&quot;</code></pre>
+<pre class="r"><code>path &lt;- &quot;/Users/craigalder/Documents/Big Data Class/N741hmwk6/&quot; # CHANGE THIS to the directory containing the fastq files after unzipping
+fns &lt;- list.files(path)
+fns</code></pre>
+<pre><code>##  [1] &quot;gg_13_8_train_set_97.fa.gz&quot;      &quot;hmwk6script.R&quot;                  
+##  [3] &quot;HW6.html&quot;                        &quot;HW6.Rmd&quot;                        
+##  [5] &quot;MiSeq_SOP&quot;                       &quot;N741hmwk6.Rproj&quot;                
+##  [7] &quot;rdp_species_assignment_14.fa.gz&quot; &quot;rdp_train_set_14.fa.gz&quot;         
+##  [9] &quot;README.html&quot;                     &quot;README.md&quot;</code></pre>
 <p>Due on 3/22 at 5 pm.</p>
 </div>
 
